@@ -1,0 +1,10 @@
+debug.log
+.tmp/
+.idea/
+.vscode/
+node_modules/
+dist/
+coverage/
+src/config.json
+terminal.glue
+.project

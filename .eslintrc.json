@@ -1,0 +1,38 @@
+{
+    "root": true,
+    "env": {
+        "es6": true,
+        "node": true,
+        "jasmine": true,
+        "browser": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:jasmine/recommended"
+    ],
+    "plugins": [
+        "jasmine"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true
+        },
+        "sourceType": "module"
+    },
+    "rules": {
+        "indent": [
+            "warn",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "semi": [
+            "error",
+            "always"
+        ]
+    },
+    "globals": {
+        "locales": false
+    }
+}
