@@ -37,7 +37,7 @@ module.exports = env => {
                     use: ["babel-loader"]
                 },
                 {
-                    test: /\.(css|scss)$/,
+                    test: /\.(css|scss|sass)$/,
                     use: ["css-hot-loader"].concat(ExtractTextPlugin.extract({
                         fallback: "style-loader",
                         use: [{
@@ -58,7 +58,7 @@ module.exports = env => {
                     }]
                 },
                 {
-                    test: /\.(jpg|png|svg)$/,
+                    test: /\.(jpg|jpeg|gif|png)$/,
                     use: [{
                         loader: "file-loader",
                         options: { name: "./images/[hash].[ext]" }
