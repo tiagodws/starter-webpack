@@ -58,7 +58,7 @@ module.exports = env => {
                     }]
                 },
                 {
-                    test: /\.(jpg|jpeg|gif|png)$/,
+                    test: /\.(jpe?g|png|gif|svg|ico)$/,
                     use: [{
                         loader: "file-loader",
                         options: { name: "./images/[hash].[ext]" }
